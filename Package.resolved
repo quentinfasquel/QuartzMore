@@ -1,0 +1,51 @@
+{
+  "originHash" : "8b8425a5361bc1e3692da94d0657902ebc0a6eca02e04614d8e7524adb2c2c23",
+  "pins" : [
+    {
+      "identity" : "cafilterbuiltins",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/quentinfasquel/CAFilterBuiltins.git",
+      "state" : {
+        "revision" : "da29d8acfbb5ac4fe6a995d696b033047f5b5424",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "dynamic",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mhdhejazi/Dynamic",
+      "state" : {
+        "revision" : "ab9a2570862d54aed2663691bb767f881226a12f",
+        "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "engine",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nathantannar4/Engine",
+      "state" : {
+        "revision" : "6135ce55af97744c1ac16cdb0f233e87e2b68a71",
+        "version" : "2.2.3"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-syntax",
+      "state" : {
+        "revision" : "f99ae8aa18f0cf0d53481901f88a0991dc3bd4a2",
+        "version" : "601.0.1"
+      }
+    },
+    {
+      "identity" : "turbocharger",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nathantannar4/Turbocharger.git",
+      "state" : {
+        "revision" : "cb68d572b3409f24e9ad60dd0844293dd7dd4b66",
+        "version" : "2.2.1"
+      }
+    }
+  ],
+  "version" : 3
+}

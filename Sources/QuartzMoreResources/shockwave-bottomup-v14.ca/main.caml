@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<caml xmlns="http://www.apple.com/CoreAnimation/1.0">
+  <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 2556" contentsFormat="RGBA8" name="Root Layer" position="589.5 1278">
+    <backgroundColor opacity="0" value="0.5 0.5 0.5"/>
+    <sublayers>
+      <CATransformLayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 2556" contentsFormat="RGBA8" name="ui" position="589.5 1278">
+	<sublayers>
+	  <CABackdropLayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 2556" contentsFormat="RGBA8" name="Backdrop Layer 2" position="589.5 1278"/>
+	  <CALayer allowsEdgeAntialiasing="1" allowsGroupBlending="0" allowsGroupOpacity="0" bounds="0 0 1179 2556" contentsFormat="RGBA8" hidden="0" name="rotate" position="589.5 1278">
+	    <sublayers>
+	      <CALayer id="#12" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 2556" contentsFormat="RGBA8" name="dimmer2" opacity="0" position="589.5 1278">
+		<backgroundColor opacity="0.5" value="0 0 0"/>
+	      </CALayer>
+	      <CALayer id="#1" allowsEdgeAntialiasing="1" allowsGroupBlending="0" allowsGroupOpacity="0" bounds="0 0 1179 2556" contentsFormat="RGBA8" hidden="0" name="zoomer" position="589.5 1278" shadowOffset="0 -135" shadowRadius="212">
+		<filters>
+		  <CAFilter filter="gaussianBlur" name="gaussianBlur" inputRadius="14" inputQuality="default" inputHardEdges="0"/>
+		</filters>
+		<sublayers>
+		  <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 2556" contentsFormat="RGBA8" name="pocket" position="589.5 1278">
+		    <mask allowsEdgeAntialiasing="1" allowsGroupOpacity="1" backgroundColor="0 0 0" bounds="0 0 1179 2464.85" contentsFormat="RGBA8" hidden="0" name="pocketmask" position="589.5 1232.43"/>
+		    <sublayers>
+		      <CATransformLayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 2556" contentsFormat="RGBA8" name="appcontainer" position="589.5 1278">
+			<sublayers>
+			  <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 2556" contentsFormat="RGBA8" name="appmesh" position="589.5 3538" transform="scale(0.25, 0.25, 1)">
+			    <meshTransform subdivisionSteps="3" value="[0 0] [0 0 0] v [0.5 0] [0.5 0 0] v [1 0] [1 0 0] v [0 0.5] [0 0.5 0] v [0.5 0.5] [0.5 0.5 0] v [1 0.5] [1 0.5 0] v [0 1] [0 1 0] v [0.5 1] [0.5 1 0] v [1 1] [1 1 0] v [0 1 4 3] [0 0 0 0] f [1 2 5 4] [0 0 0 0] f [3 4 7 6] [0 0 0 0] f [4 5 8 7] [0 0 0 0] f "/>
+			    <sublayers>
+			      <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" backgroundColor="1 1 1" bounds="0 0 1179 2556" contentsFormat="RGBA8" cornerCurve="continuous" cornerRadius="500" masksToBounds="1" name="card" position="589.5 1278">
+				<sublayers>
+				  <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 2556" contentsFormat="RGBA8" hidden="0" name="appcontent1.png" position="589.5 1278"/>
+				  <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" backgroundColor="1 1 1" bounds="0 0 963.246170043945 130.373443603516" contentsFormat="RGBA8" name="Layer 9" opacity="0" position="618.092712402344 2459.684097290039"/>
+				  <CAGradientLayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 5112" contentsFormat="RGBA8" name="Gradient Layer 1" opacity="0.151238" position="589.500047566476 524">
+				    <colors>
+				      <CGColor opacity="0" value="0 0 0"/>
+				      <CGColor value="0 0 0"/>
+				      <CGColor value="0 0 0"/>
+				    </colors>
+				    <interpolations>
+				      <CAMediaTimingFunction value="easeInEaseOut"/>
+				      <CAMediaTimingFunction value="easeInEaseOut"/>
+				    </interpolations>
+				    <locations>
+				      <integer value="0"/>
+				      <real value="0.501916"/>
+				      <integer value="1"/>
+				    </locations>
+				  </CAGradientLayer>
+				</sublayers>
+			      </CALayer>
+			    </sublayers>
+			  </CALayer>
+			</sublayers>
+		      </CATransformLayer>
+		    </sublayers>
+		  </CALayer>
+		</sublayers>
+	      </CALayer>
+	      <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 2556" contentsFormat="RGBA8" contentsScale="1.217" contentsScaling="repeat" hidden="1" name="checkerboard" position="589.5 1278">
+		<contents type="CGImage" src="assets/checkerbpard.png"/>
+		<sublayers>
+		  <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 2556" contentsFormat="RGBA8" contentsScale="1.217" name="Layer 13" position="589.5 1278">
+		    <backgroundColor opacity="0.8738" value="0.66 0.66 0.66"/>
+		  </CALayer>
+		</sublayers>
+	      </CALayer>
+	    </sublayers>
+	    <states>
+	      <LKState name="zoomed">
+		<elements>
+		  <LKStateSetValue targetId="#1" keyPath="transform.scale.xy">
+		    <value type="real" value="2.5"/>
+		  </LKStateSetValue>
+		  <LKStateSetValue targetId="#1" keyPath="position.y">
+		    <value type="integer" value="-942"/>
+		  </LKStateSetValue>
+		</elements>
+	      </LKState>
+	    </states>
+	    <stateTransitions>
+	      <LKStateTransition fromState="*" toState="zoomed">
+		<elements>
+		  <LKStateTransitionElement key="transform.scale.xy" targetId="#1">
+		    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="transform.scale.xy" duration="0.8" fillMode="backwards"/>
+		  </LKStateTransitionElement>
+		  <LKStateTransitionElement key="position.y" targetId="#1">
+		    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="position.y" duration="0.8" fillMode="backwards"/>
+		  </LKStateTransitionElement>
+		</elements>
+	      </LKStateTransition>
+	      <LKStateTransition fromState="zoomed" toState="*">
+		<elements>
+		  <LKStateTransitionElement key="transform.scale.xy" targetId="#1">
+		    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="transform.scale.xy" duration="0.8" fillMode="backwards"/>
+		  </LKStateTransitionElement>
+		  <LKStateTransitionElement key="position.y" targetId="#1">
+		    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" keyPath="position.y" duration="0.8" fillMode="backwards"/>
+		  </LKStateTransitionElement>
+		</elements>
+	      </LKStateTransition>
+	    </stateTransitions>
+	  </CALayer>
+	  <CATransformLayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 2556" contentsFormat="RGBA8" name="Transform Layer 1" position="589.5 1278">
+	    <sublayers>
+	      <CATransformLayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 2556" contentsFormat="RGBA8" name="ridge" position="589.5 1278">
+		<sublayers>
+		  <CABackdropLayer id="#24" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 1135.838577270508" contentsFormat="RGBA8" hidden="0" meshTransform="[0 0] [0 0 0.5] v [0.16666667163 0] [0.16666667163 0 0.5] v [0.33333334327 0] [0.33333334327 0 0.5] v [0.5 0] [0.5 0 0.5] v [0.66666668653 0] [0.66666668653 0 0.5] v [0.83333331347 0] [0.83333331347 0 0.5] v [1 0] [1 0 0.5] v [0 0.16666667163] [0 0.16666667163 0.5] v [0.16666667163 0.16666667163] [0.16666667163 0.16666667163 0.5] v [0.33333334327 0.16666667163] [0.33333334327 0.15657030046 0.5] v [0.5 0.16666667163] [0.5 0.14355108142 0.5] v [0.66666668653 0.16666667163] [0.66666668653 0.15657030046 0.5] v [0.83333331347 0.16666667163] [0.83333331347 0.16666667163 0.5] v [1 0.16666667163] [1 0.16666667163 0.5] v [0 0.33333334327] [-0.16506579518 0.28251966834 0.5] v [0.16666667163 0.33333334327] [0.063924536109 0.23681342602 0.5] v [0.33333334327 0.33333334327] [0.28018209338 0.20756453276 0.5] v [0.5 0.33333334327] [0.5 0.18772345781 0.5] v [0.66666668653 0.33333334327] [0.69728708267 0.20756453276 0.5] v [0.83333331347 0.33333334327] [0.91946858168 0.22502860427 0.5] v [1 0.33333334327] [1.176461935 0.28251966834 0.5] v [0 0.5] [-0.16506579518 0.3284252584 0.5] v [0.16666667163 0.5] [0.063924536109 0.28271901608 0.5] v [0.33333334327 0.5] [0.28018209338 0.25347012281 0.5] v [0.5 0.5] [0.5 0.23681342602 0.5] v [0.66666668653 0.5] [0.69728708267 0.25347012281 0.5] v [0.83333331347 0.5] [0.91946858168 0.27093419433 0.5] v [1 0.5] [1.176461935 0.3284252584 0.5] v [0 0.66666668653] [0.11671039462 0.7340015173 0.5] v [0.16666667163 0.66666668653] [0.23204112053 0.73890286684 0.5] v [0.33333334327 0.66666668653] [0.38032704592 0.7340015173 0.5] v [0.5 0.66666668653] [0.5 0.7273684144 0.5] v [0.66666668653 0.66666668653] [0.63338518143 0.7340015173 0.5] v [0.83333331347 0.66666668653] [0.77346140146 0.73890286684 0.5] v [1 0.66666668653] [0.93438637257 0.73890286684 0.5] v [0 0.83333331347] [0 0.83333331347 0.5] v [0.16666667163 0.83333331347] [0.16666667163 0.83333331347 0.5] v [0.33333334327 0.83333331347] [0.33333334327 0.82761502266 0.5] v [0.5 0.83333331347] [0.5 0.81888610125 0.5] v [0.66666668653 0.83333331347] [0.66666668653 0.82761502266 0.5] v [0.83333331347 0.83333331347] [0.83333331347 0.83333331347 0.5] v [1 0.83333331347] [1 0.83333331347 0.5] v [0 1] [0 1 0.5] v [0.16666667163 1] [0.16666667163 1 0.5] v [0.33333334327 1] [0.33333334327 1 0.5] v [0.5 1] [0.5 1 0.5] v [0.66666668653 1] [0.66666668653 1 0.5] v [0.83333331347 1] [0.83333331347 1 0.5] v [1 1] [1 1 0.5] v [0 1 8 7] [0 0 0 0] f [1 2 9 8] [0 0 0 0] f [2 3 10 9] [0 0 0 0] f [3 4 11 10] [0 0 0 0] f [4 5 12 11] [0 0 0 0] f [5 6 13 12] [0 0 0 0] f [7 8 15 14] [0 0 0 0] f [8 9 16 15] [0 0 0 0] f [9 10 17 16] [0 0 0 0] f [10 11 18 17] [0 0 0 0] f [11 12 19 18] [0 0 0 0] f [12 13 20 19] [0 0 0 0] f [14 15 22 21] [0 0 0 0] f [15 16 23 22] [0 0 0 0] f [16 17 24 23] [0 0 0 0] f [17 18 25 24] [0 0 0 0] f [18 19 26 25] [0 0 0 0] f [19 20 27 26] [0 0 0 0] f [21 22 29 28] [0 0 0 0] f [22 23 30 29] [0 0 0 0] f [23 24 31 30] [0 0 0 0] f [24 25 32 31] [0 0 0 0] f [25 26 33 32] [0 0 0 0] f [26 27 34 33] [0 0 0 0] f [28 29 36 35] [0 0 0 0] f [29 30 37 36] [0 0 0 0] f [30 31 38 37] [0 0 0 0] f [31 32 39 38] [0 0 0 0] f [32 33 40 39] [0 0 0 0] f [33 34 41 40] [0 0 0 0] f [35 36 43 42] [0 0 0 0] f [36 37 44 43] [0 0 0 0] f [37 38 45 44] [0 0 0 0] f [38 39 46 45] [0 0 0 0] f [39 40 47 46] [0 0 0 0] f [40 41 48 47] [0 0 0 0] f " name="Mesh Ridge" position="589.5 2946.0807"/>
+		  <CALayer id="#15" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" backgroundColor="1 1 1" bounds="0 0 500 500" contentsFormat="RGBA8" cornerRadius="250" name="Big Circle" opacity="0.681387" position="589.5 2768" shouldRasterize="1" transform="scale(0.81, 0.81, 1)">
+		    <compositingFilter type="CAFilter" filter="plusL" name="plusL"/>
+		    <filters>
+		      <CAFilter filter="gaussianBlur" name="gaussianBlur" inputRadius="18.4717" inputQuality="default" inputHardEdges="0"/>
+		    </filters>
+		  </CALayer>
+		  <CALayer id="#13" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 795 398" contentsFormat="RGBA8" name="Eclipse Ridge" position="589.5 2612" transform="scale(0.72, 0.72, 1)">
+		    <compositingFilter type="CAFilter" filter="colorDodgeBlendMode" name="colorDodgeBlendMode"/>
+		    <contents type="CGImage" src="assets/rainbow%20eclips%203.png"/>
+		    <filters>
+		      <CAFilter filter="gaussianBlur" name="gaussianBlur" enabled="0" inputRadius="0" inputQuality="low" inputHardEdges="0"/>
+		    </filters>
+		    <sublayers>
+		      <CALayer id="#14" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" backgroundColor="0 0 0" bounds="0 0 795 398" contentsFormat="RGBA8" name="blackout eclpise" opacity="0" position="397.5 199"/>
+		    </sublayers>
+		  </CALayer>
+		  <CALayer id="#21" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 795 398" contentsFormat="RGBA8" name="Dark Eclipse" position="589.5 2612" transform="scale(0.72, 0.72, 1)">
+		    <compositingFilter type="CAFilter" filter="multiplyBlendMode" name="multiplyBlendMode"/>
+		    <contents type="CGImage" src="assets/blurred%20ridge.png"/>
+		    <sublayers>
+		      <CALayer id="#22" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" backgroundColor="1 1 1" bounds="0 0 795 398" contentsFormat="RGBA8" name="blackout eclpise" opacity="0" position="397.5 199"/>
+		    </sublayers>
+		  </CALayer>
+		  <CABackdropLayer id="#16" scale="0.8" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 1080.810180664062" contentsFormat="RGBA8" hidden="0" name="jindo backing blur" position="589.5 3063" transform="rotate(180deg)">
+		    <filters>
+		      <CAFilter filter="variableBlur" name="variableBlur" inputRadius="7" inputNormalizeEdges="0" inputDither="0">
+			<inputMaskImage src="assets/round%20mask%201%20flipped%20tiny%203.png"/>
+		      </CAFilter>
+		      <CAFilter filter="colorSaturate" name="colorSaturate" inputAmount="1.5"/>
+		    </filters>
+		    <mask allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 1080.810180664062" contentsFormat="RGBA8" name="Layer 12" position="589.5 540.405090332031">
+		      <contents type="CGImage" src="assets/round%20mask%201%20flipped%20tiny%201.png"/>
+		    </mask>
+		  </CABackdropLayer>
+		  <CALayer id="#17" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 413 165" contentsFormat="RGBA8" name="glow.png" opacity="0.629671" position="589.5 2866.5" transform="scale(8.54, 5.92, 1)">
+		    <compositingFilter type="CAFilter" filter="plusL" name="plusL"/>
+		    <contents type="CGImage" src="assets/glow.png"/>
+		  </CALayer>
+		  <CALayer id="#25" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1130 391" contentsFormat="RGBA8" contentsMultiplyColor="1 1 1" name="slide down glow" opacity="0" position="589 1794.5" transform="scale(4.47, 4.47, 1)">
+		    <compositingFilter type="CAFilter" filter="plusL" name="plusL"/>
+		    <contents type="CGImage" src="assets/chromatic%20sheen.png"/>
+		  </CALayer>
+		</sublayers>
+	      </CATransformLayer>
+	      <CATransformLayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 2556" contentsFormat="RGBA8" name="offsetter" position="589.5 3996">
+		<sublayers>
+		  <CATransformLayer id="#20" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 2556" contentsFormat="RGBA8" name="shift1 - bounce" position="589.5 300">
+		    <sublayers>
+		      <CATransformLayer id="#19" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 2556" contentsFormat="RGBA8" name="shift2" position="589.5 0">
+			<sublayers>
+			  <CABackdropLayer id="#18" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 915.629959106445" contentsFormat="RGBA8" hidden="0" meshTransform="[0 0] [0 0 0.5] v [0.25 0] [0.25 0 0.5] v [0.5 0] [0.5 0 0.5] v [0.75 0] [0.75 0 0.5] v [1 0] [1 0 0.5] v [0 0.25] [0 0.25 0.5] v [0.25 0.25] [0.25 0.25 0.5] v [0.5 0.25] [0.5 0.25 0.5] v [0.75 0.25] [0.75 0.25 0.5] v [1 0.25] [1 0.25 0.5] v [0 0.5] [0 0.5 0.5] v [0.25 0.5] [0.25 0.5 0.5] v [0.5 0.5] [0.5 0.5 0.5] v [0.75 0.5] [0.75 0.5 0.5] v [1 0.5] [1 0.5 0.5] v [0 0.75] [0 0.75 0.5] v [0.25 0.75] [0.25 0.75 0.5] v [0.5 0.75] [0.5 0.75 0.5] v [0.75 0.75] [0.75 0.75 0.5] v [1 0.75] [1 0.75 0.5] v [0 1] [0 1 0.5] v [0.25 1] [0.25 1 0.5] v [0.5 1] [0.5 1 0.5] v [0.75 1] [0.75 1 0.5] v [1 1] [1 1 0.5] v [0 1 6 5] [0 0 0 0] f [1 2 7 6] [0 0 0 0] f [2 3 8 7] [0 0 0 0] f [3 4 9 8] [0 0 0 0] f [5 6 11 10] [0 0 0 0] f [6 7 12 11] [0 0 0 0] f [7 8 13 12] [0 0 0 0] f [8 9 14 13] [0 0 0 0] f [10 11 16 15] [0 0 0 0] f [11 12 17 16] [0 0 0 0] f [12 13 18 17] [0 0 0 0] f [13 14 19 18] [0 0 0 0] f [15 16 21 20] [0 0 0 0] f [16 17 22 21] [0 0 0 0] f [17 18 23 22] [0 0 0 0] f [18 19 24 23] [0 0 0 0] f " name="Recoil Ridge" position="589.5 2011.185012817383" transform="scale(1, 1.54, 1)">
+			    <sublayers>
+			      <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" backgroundColor="0.9906 0.5235 0.3228" bounds="0 0 1179 16.828536987305" contentsFormat="RGBA8" hidden="1" name="Layer 11" position="589.5 449.684280395508"/>
+			    </sublayers>
+			  </CABackdropLayer>
+			</sublayers>
+		      </CATransformLayer>
+		    </sublayers>
+		  </CATransformLayer>
+		</sublayers>
+	      </CATransformLayer>
+	      <CALayer id="#9" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" backgroundColor="0 0 0" bounds="0 0 348.539001464844 487.958526611328" contentsFormat="RGBA8" hidden="0" masksToBounds="0" name="Particles" opacity="0" position="589.131072998047 2016.020736694336" transform="scale(3.08, 3.08, 1)">
+		<compositingFilter type="CAFilter" filter="plusL" name="plusL"/>
+		<filters>
+		  <CAFilter filter="gaussianBlur" name="gaussianBlur" inputRadius="5.00281" inputQuality="low" inputHardEdges="0"/>
+		</filters>
+		<sublayers>
+		  <CAEmitterLayer id="#10" cullRect="-1000 0 Inf 302" emitterPosition="14 155" emitterShape="rectangle" emitterSize="414 246" renderMode="cheapAdditive" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 28 284" contentsFormat="RGBA8" hidden="0" name="Emitter" opacity="1" position="170.138427734375 161.958526611328">
+		    <emitterCells>
+		      <CAEmitterCell alphaRange="0.4" alphaSpeed="0" birthRate="80" blueRange="1" blueSpeed="0" color="1 1 1" emissionLatitude="0" emissionLongitude="0" greenRange="1" greenSpeed="0" lifetime="5" name="EmitterCell" orientationLatitude="0" redRange="1" redSpeed="0" rotation="0" scale="0.15" scaleRange="0.5" scaleSpeed="0" spin="0" spinRange="0" velocity="0" velocityRange="0" xAcceleration="0" yAcceleration="0">
+			<contents type="CGImage" src="assets/Small%20glow%20dot%20elong%202%204.png"/>
+			<emitterBehaviors>
+			  <CAEmitterBehavior behavior="valueOverLife" name="valueOverLife" keyPath="color.alpha" additive="0">
+			    <locations>
+			      <integer value="0"/>
+			      <real value="0.0486484"/>
+			      <real value="0.957105"/>
+			      <integer value="1"/>
+			    </locations>
+			    <values>
+			      <integer value="0"/>
+			      <integer value="1"/>
+			      <integer value="1"/>
+			      <integer value="0"/>
+			    </values>
+			  </CAEmitterBehavior>
+			  <CAEmitterBehavior behavior="simpleAttractor" name="simpleAttractor" falloff="352" stiffness="-2" position="7 325"/>
+			  <CAEmitterBehavior behavior="light" name="light" directionLongitude="-1.5708" directionLatitude="1.5708" position="0 332" diffuseIntensity="1" falloff="300" color="1 1 1" ambientIntensity="0.38" zPosition="0" falloffDistance="100" coneAngle="3.18872" coneEdgeSoftness="0.174533" spot="1" appliesAlpha="1"/>
+			  <CAEmitterBehavior behavior="wave" name="wave" enabled="0" force="100 0 0" frequency="2"/>
+			  <CAEmitterBehavior behavior="wave" name="wave 2" enabled="0" force="0 100 0" frequency="1.5"/>
+			</emitterBehaviors>
+		      </CAEmitterCell>
+		    </emitterCells>
+		  </CAEmitterLayer>
+		</sublayers>
+	      </CALayer>
+	      <CATransformLayer id="#23" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 2556" contentsFormat="RGBA8" hidden="0" name="hinting stuff" position="589.5 1278">
+		<sublayers>
+		  <CABackdropLayer id="#7" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 1243.554153442383" contentsFormat="RGBA8" meshTransform="[0 0] [0 0 0.5] v [0.20000000298 0] [0.20000000298 0 0.5] v [0.40000000596 0] [0.40000000596 0 0.5] v [0.60000002384 0] [0.60000002384 0 0.5] v [0.80000001192 0] [0.80000001192 0 0.5] v [1 0] [1 0 0.5] v [0 0.20000000298] [0 0.20000000298 0.5] v [0.20000000298 0.20000000298] [0.20000000298 0.20000000298 0.5] v [0.40000000596 0.20000000298] [0.40000000596 0.20000000298 0.5] v [0.60000002384 0.20000000298] [0.60000002384 0.20000000298 0.5] v [0.80000001192 0.20000000298] [0.80000001192 0.20000000298 0.5] v [1 0.20000000298] [1 0.20000000298 0.5] v [0 0.40000000596] [0 0.40000000596 0.5] v [0.20000000298 0.40000000596] [0.20000000298 0.40000000596 0.5] v [0.40000000596 0.40000000596] [0.40000000596 0.40000000596 0.5] v [0.60000002384 0.40000000596] [0.60000002384 0.40000000596 0.5] v [0.80000001192 0.40000000596] [0.80000001192 0.40000000596 0.5] v [1 0.40000000596] [1 0.40000000596 0.5] v [0 0.60000002384] [0 0.60000002384 0.5] v [0.20000000298 0.60000002384] [0.20000000298 0.60000002384 0.5] v [0.40000000596 0.60000002384] [0.40000000596 0.60000002384 0.5] v [0.60000002384 0.60000002384] [0.60000002384 0.60000002384 0.5] v [0.80000001192 0.60000002384] [0.80000001192 0.60000002384 0.5] v [1 0.60000002384] [1 0.60000002384 0.5] v [0 0.80000001192] [0 0.80000001192 0.5] v [0.20000000298 0.80000001192] [0.20000000298 0.80000001192 0.5] v [0.40000000596 0.80000001192] [0.40000000596 0.80000001192 0.5] v [0.60000002384 0.80000001192] [0.60000002384 0.80000001192 0.5] v [0.80000001192 0.80000001192] [0.80000001192 0.80000001192 0.5] v [1 0.80000001192] [1 0.80000001192 0.5] v [0 1] [0 1 0.5] v [0.20000000298 1] [0.20000000298 1 0.5] v [0.40000000596 1] [0.40000000596 1 0.5] v [0.60000002384 1] [0.60000002384 1 0.5] v [0.80000001192 1] [0.80000001192 1 0.5] v [1 1] [1 1 0.5] v [0 1 7 6] [0 0 0 0] f [1 2 8 7] [0 0 0 0] f [2 3 9 8] [0 0 0 0] f [3 4 10 9] [0 0 0 0] f [4 5 11 10] [0 0 0 0] f [6 7 13 12] [0 0 0 0] f [7 8 14 13] [0 0 0 0] f [8 9 15 14] [0 0 0 0] f [9 10 16 15] [0 0 0 0] f [10 11 17 16] [0 0 0 0] f [12 13 19 18] [0 0 0 0] f [13 14 20 19] [0 0 0 0] f [14 15 21 20] [0 0 0 0] f [15 16 22 21] [0 0 0 0] f [16 17 23 22] [0 0 0 0] f [18 19 25 24] [0 0 0 0] f [19 20 26 25] [0 0 0 0] f [20 21 27 26] [0 0 0 0] f [21 22 28 27] [0 0 0 0] f [22 23 29 28] [0 0 0 0] f [24 25 31 30] [0 0 0 0] f [25 26 32 31] [0 0 0 0] f [26 27 33 32] [0 0 0 0] f [27 28 34 33] [0 0 0 0] f [28 29 35 34] [0 0 0 0] f " name="stretch up mesh" position="589.5 1934.222915649414"/>
+		  <CABackdropLayer id="#2" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 1080.810180664062" contentsFormat="RGBA8" hidden="0" name="jindo backing blur" position="589.5 3096.000000000001">
+		    <filters>
+		      <CAFilter filter="variableBlur" name="variableBlur" inputRadius="4.1" inputNormalizeEdges="1" inputDither="0">
+			<inputMaskImage src="assets/mask%201.png"/>
+		      </CAFilter>
+		    </filters>
+		  </CABackdropLayer>
+		  <CALayer id="#11" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1130 391" contentsFormat="RGBA8" name="glow 2.png" opacity="0" position="589 2532.5" transform="scale(2.64, 2.64, 1)">
+		    <compositingFilter type="CAFilter" filter="plusL" name="plusL"/>
+		    <contents type="CGImage" src="assets/glow%202.png"/>
+		  </CALayer>
+		  <CALayer id="#3" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 391 391" contentsFormat="RGBA8" hidden="1" name="glow 2.png 1" opacity="0" position="589 2532.5" transform="scale(12.89, 12.89, 1)">
+		    <compositingFilter type="CAFilter" filter="plusL" name="plusL"/>
+		    <contents type="CGImage" src="assets/glow%202.png"/>
+		  </CALayer>
+		  <CALayer id="#6" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 648 391" contentsFormat="RGBA8" name="small glow" opacity="0" position="589 2509.5" transform="scale(1.98, 1.98, 1)">
+		    <compositingFilter type="CAFilter" filter="plusL" name="plusL"/>
+		    <contents type="CGImage" src="assets/glow%202.png"/>
+		  </CALayer>
+		  <CALayer id="#4" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" backgroundColor="0 0 0" bounds="0 0 348.539001464844 487.958526611328" contentsFormat="RGBA8" hidden="1" masksToBounds="1" name="Layer 1" opacity="0" position="604.131072998047 1822.020736694336" transform="scale(3.08, 3.08, 1)">
+		    <compositingFilter type="CAFilter" filter="plusL" name="plusL"/>
+		    <sublayers>
+		      <CAEmitterLayer cullRect="-1000 0 1.797693134862e308 861" emitterPosition="14 28" emitterShape="line" emitterSize="337 0" renderMode="cheapAdditive" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 28 284" contentsFormat="RGBA8" hidden="0" name="impFIRE02" position="170.138427734375 161.958526611328">
+			<emitterCells>
+			  <CAEmitterCell alphaRange="0.4" alphaSpeed="0" birthRate="25" blueRange="0" blueSpeed="0" emissionLatitude="0" emissionLongitude="0" greenRange="0" greenSpeed="0" lifetime="2" name="cell" redRange="0" redSpeed="0" scale="0.5" scaleRange="0.5" scaleSpeed="0" spin="0" spinRange="0" velocity="-2600" velocityRange="-2000" xAcceleration="0" yAcceleration="0">
+			    <color opacity="0.7517" value="1 1 1"/>
+			    <emitterBehaviors>
+			      <CAEmitterBehavior behavior="valueOverLife" name="valueOverLife" enabled="0" additive="0" keyPath="color.alpha">
+				<values>
+				  <integer value="0"/>
+				  <integer value="1"/>
+				  <integer value="1"/>
+				  <integer value="0"/>
+				</values>
+				<locations>
+				  <integer value="0"/>
+				  <real value="0.819193"/>
+				  <real value="0.935045"/>
+				  <integer value="1"/>
+				</locations>
+			      </CAEmitterBehavior>
+			    </emitterBehaviors>
+			  </CAEmitterCell>
+			</emitterCells>
+		      </CAEmitterLayer>
+		      <CABackdropLayer groupName="" scale="0.04" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 328.539 456.9585" contentsFormat="RGBA8" name="Backdrop Layer 1" position="174.269500732422 243.979263305664">
+			<compositingFilter type="CAFilter" filter="plusL" name="plusL"/>
+			<filters>
+			  <CAFilter filter="gaussianBlur" name="gaussianBlur" inputRadius="6.89573" inputQuality="low" inputHardEdges="1"/>
+			</filters>
+		      </CABackdropLayer>
+		      <CABackdropLayer groupName="" scale="0.04" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 328.539 456.9585" contentsFormat="RGBA8" hidden="0" name="Backdrop Layer 4" position="174.269500732422 243.979263305664">
+			<compositingFilter type="CAFilter" filter="plusL" name="plusL"/>
+			<filters>
+			  <CAFilter filter="gaussianBlur" name="gaussianBlur" inputRadius="6.89573" inputQuality="low" inputHardEdges="1"/>
+			</filters>
+		      </CABackdropLayer>
+		      <CABackdropLayer groupName="" scale="0.04" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 328.539 456.9585" contentsFormat="RGBA8" hidden="1" name="Backdrop Layer 7" position="174.269500732422 243.979263305664">
+			<compositingFilter type="CAFilter" filter="plusL" name="plusL"/>
+			<filters>
+			  <CAFilter filter="gaussianBlur" name="gaussianBlur" inputRadius="37.5" inputQuality="low" inputHardEdges="1"/>
+			</filters>
+		      </CABackdropLayer>
+		    </sublayers>
+		  </CALayer>
+		  <CABackdropLayer id="#8" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1179 1751.325378417969" contentsFormat="RGBA8" hidden="1" meshTransform="[0 0] [0 0 0.5] v [0.16666667163 0] [0.16666667163 0 0.5] v [0.33333334327 0] [0.33333334327 0 0.5] v [0.5 0] [0.5 0 0.5] v [0.66666668653 0] [0.66666668653 0 0.5] v [0.83333331347 0] [0.83333331347 0 0.5] v [1 0] [1 0 0.5] v [0 0.16666667163] [0 0.16666667163 0.5] v [0.16666667163 0.16666667163] [0.16666667163 0.16666667163 0.5] v [0.33333334327 0.16666667163] [0.33333334327 0.16666667163 0.5] v [0.5 0.16666667163] [0.5 0.16666667163 0.5] v [0.66666668653 0.16666667163] [0.66666668653 0.16666667163 0.5] v [0.83333331347 0.16666667163] [0.83333331347 0.16666667163 0.5] v [1 0.16666667163] [1 0.16666667163 0.5] v [0 0.33333334327] [0 0.33333334327 0.5] v [0.16666667163 0.33333334327] [0.16666667163 0.33333334327 0.5] v [0.33333334327 0.33333334327] [0.33333334327 0.33333334327 0.5] v [0.5 0.33333334327] [0.5 0.33333334327 0.5] v [0.66666668653 0.33333334327] [0.66666668653 0.33333334327 0.5] v [0.83333331347 0.33333334327] [0.83333331347 0.33333334327 0.5] v [1 0.33333334327] [1 0.33333334327 0.5] v [0 0.5] [0 0.5 0.5] v [0.16666667163 0.5] [0.16666667163 0.5 0.5] v [0.33333334327 0.5] [0.33333334327 0.5 0.5] v [0.5 0.5] [0.5 0.5 0.5] v [0.66666668653 0.5] [0.66666668653 0.5 0.5] v [0.83333331347 0.5] [0.83333331347 0.5 0.5] v [1 0.5] [1 0.5 0.5] v [0 0.66666668653] [0 0.66666668653 0.5] v [0.16666667163 0.66666668653] [0.16666667163 0.66666668653 0.5] v [0.33333334327 0.66666668653] [0.33333334327 0.66666668653 0.5] v [0.5 0.66666668653] [0.5 0.66666668653 0.5] v [0.66666668653 0.66666668653] [0.66666668653 0.66666668653 0.5] v [0.83333331347 0.66666668653] [0.83333331347 0.66666668653 0.5] v [1 0.66666668653] [1 0.66666668653 0.5] v [0 0.83333331347] [0 0.83333331347 0.5] v [0.16666667163 0.83333331347] [0.16666667163 0.83333331347 0.5] v [0.33333334327 0.83333331347] [0.33333334327 0.83333331347 0.5] v [0.5 0.83333331347] [0.5 0.83333331347 0.5] v [0.66666668653 0.83333331347] [0.66666668653 0.83333331347 0.5] v [0.83333331347 0.83333331347] [0.83333331347 0.83333331347 0.5] v [1 0.83333331347] [1 0.83333331347 0.5] v [0 1] [0 1 0.5] v [0.16666667163 1] [0.16666667163 1 0.5] v [0.33333334327 1] [0.33333334327 1 0.5] v [0.5 1] [0.5 1 0.5] v [0.66666668653 1] [0.66666668653 1 0.5] v [0.83333331347 1] [0.83333331347 1 0.5] v [1 1] [1 1 0.5] v [0 1 8 7] [0 0 0 0] f [1 2 9 8] [0 0 0 0] f [2 3 10 9] [0 0 0 0] f [3 4 11 10] [0 0 0 0] f [4 5 12 11] [0 0 0 0] f [5 6 13 12] [0 0 0 0] f [7 8 15 14] [0 0 0 0] f [8 9 16 15] [0 0 0 0] f [9 10 17 16] [0 0 0 0] f [10 11 18 17] [0 0 0 0] f [11 12 19 18] [0 0 0 0] f [12 13 20 19] [0 0 0 0] f [14 15 22 21] [0 0 0 0] f [15 16 23 22] [0 0 0 0] f [16 17 24 23] [0 0 0 0] f [17 18 25 24] [0 0 0 0] f [18 19 26 25] [0 0 0 0] f [19 20 27 26] [0 0 0 0] f [21 22 29 28] [0 0 0 0] f [22 23 30 29] [0 0 0 0] f [23 24 31 30] [0 0 0 0] f [24 25 32 31] [0 0 0 0] f [25 26 33 32] [0 0 0 0] f [26 27 34 33] [0 0 0 0] f [28 29 36 35] [0 0 0 0] f [29 30 37 36] [0 0 0 0] f [30 31 38 37] [0 0 0 0] f [31 32 39 38] [0 0 0 0] f [32 33 40 39] [0 0 0 0] f [33 34 41 40] [0 0 0 0] f [35 36 43 42] [0 0 0 0] f [36 37 44 43] [0 0 0 0] f [37 38 45 44] [0 0 0 0] f [38 39 46 45] [0 0 0 0] f [39 40 47 46] [0 0 0 0] f [40 41 48 47] [0 0 0 0] f " name="ripple ridge upwards" position="589.5 496.060363769531"/>
+		  <CALayer id="#5" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1346 1600" contentsFormat="RGBA8" name="hint slide up" opacity="0" position="589 694.5" transform="scale(1.89, 1.89, 1)">
+		    <compositingFilter type="CAFilter" filter="plusL" name="plusL"/>
+		    <contents type="CGImage" src="assets/blur%20sheen%205.png"/>
+		  </CALayer>
+		</sublayers>
+	      </CATransformLayer>
+	      <CALayer id="#26" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 50 400" contentsFormat="RGBA8" contentsMultiplyColor="1 1 1" hidden="1" name="EVA" opacity="0" position="589 2344" transform="scale(13.21, 13.21, 1)">
+		<compositingFilter type="CAFilter" filter="plusL" name="plusL"/>
+		<contents type="CGImage" src="assets/blur%20line%204%201.png"/>
+	      </CALayer>
+	    </sublayers>
+	  </CATransformLayer>
+	</sublayers>
+      </CATransformLayer>
+    </sublayers>
+    <states>
+      <LKState name="State 0"/>
+      <LKState name="hint">
+	<elements>
+	  <LKStateSetValue targetId="#2" keyPath="filters.colorSaturate.inputAmount">
+	    <value type="integer" value="2"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#3" keyPath="opacity">
+	    <value type="real" value="0.129712"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#4" keyPath="opacity">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#5" keyPath="position.y">
+	    <value type="real" value="2385.5"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#6" keyPath="opacity">
+	    <value type="real" value="0.75"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#7" keyPath="meshTransform">
+	    <value type="CAMeshTransform" value="[0 0] [0 0 0.5] v [0.20000000298 0] [0.20000000298 0 0.5] v [0.40000000596 0] [0.40000000596 0 0.5] v [0.60000002384 0] [0.60000002384 0 0.5] v [0.80000001192 0] [0.80000001192 0 0.5] v [1 0] [1 0 0.5] v [0 0.20000000298] [0 0.26677584648 0.5] v [0.20000000298 0.20000000298] [0.20000000298 0.26677584648 0.5] v [0.40000000596 0.20000000298] [0.40000000596 0.26677584648 0.5] v [0.60000002384 0.20000000298] [0.60000002384 0.26677584648 0.5] v [0.80000001192 0.20000000298] [0.80000001192 0.26677584648 0.5] v [1 0.20000000298] [1 0.26677584648 0.5] v [0 0.40000000596] [0 0.60583865643 0.5] v [0.20000000298 0.40000000596] [0.20000000298 0.5579611063 0.5] v [0.40000000596 0.40000000596] [0.40000000596 0.53456950188 0.5] v [0.60000002384 0.40000000596] [0.60000002384 0.53456950188 0.5] v [0.80000001192 0.40000000596] [0.80000001192 0.5579611063 0.5] v [1 0.40000000596] [1 0.58994650841 0.5] v [0 0.60000002384] [0 0.92771327496 0.5] v [0.20000000298 0.60000002384] [0.20000000298 0.86369794607 0.5] v [0.40000000596 0.60000002384] [0.40000000596 0.82349252701 0.5] v [0.60000002384 0.60000002384] [0.60000002384 0.82349252701 0.5] v [0.80000001192 0.60000002384] [0.80000001192 0.86369794607 0.5] v [1 0.60000002384] [1 0.94095665216 0.5] v [0 0.80000001192] [0 1.3594896793 0.5] v [0.20000000298 0.80000001192] [0.20000000298 1.3594896793 0.5] v [0.40000000596 0.80000001192] [0.40000000596 1.3594896793 0.5] v [0.60000002384 0.80000001192] [0.60000002384 1.3594896793 0.5] v [0.80000001192 0.80000001192] [0.80000001192 1.3594896793 0.5] v [1 0.80000001192] [1 1.3594896793 0.5] v [0 1] [0 3.2943530083 0.5] v [0.20000000298 1] [0.20000000298 3.2943530083 0.5] v [0.40000000596 1] [0.40000000596 3.2943530083 0.5] v [0.60000002384 1] [0.60000002384 3.2943530083 0.5] v [0.80000001192 1] [0.80000001192 3.2943530083 0.5] v [1 1] [1 3.2943530083 0.5] v [0 1 7 6] [0 0 0 0] f [1 2 8 7] [0 0 0 0] f [2 3 9 8] [0 0 0 0] f [3 4 10 9] [0 0 0 0] f [4 5 11 10] [0 0 0 0] f [6 7 13 12] [0 0 0 0] f [7 8 14 13] [0 0 0 0] f [8 9 15 14] [0 0 0 0] f [9 10 16 15] [0 0 0 0] f [10 11 17 16] [0 0 0 0] f [12 13 19 18] [0 0 0 0] f [13 14 20 19] [0 0 0 0] f [14 15 21 20] [0 0 0 0] f [15 16 22 21] [0 0 0 0] f [16 17 23 22] [0 0 0 0] f [18 19 25 24] [0 0 0 0] f [19 20 26 25] [0 0 0 0] f [20 21 27 26] [0 0 0 0] f [21 22 28 27] [0 0 0 0] f [22 23 29 28] [0 0 0 0] f [24 25 31 30] [0 0 0 0] f [25 26 32 31] [0 0 0 0] f [26 27 33 32] [0 0 0 0] f [27 28 34 33] [0 0 0 0] f [28 29 35 34] [0 0 0 0] f "/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#5" keyPath="opacity">
+	    <value type="real" value="0.4"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#8" keyPath="position.y">
+	    <value type="real" value="2316.06"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#8" keyPath="meshTransform">
+	    <value type="CAMeshTransform" value="[0 0] [0 0 0.5] v [0.16666667163 0] [0.16666667163 0 0.5] v [0.33333334327 0] [0.33333334327 0 0.5] v [0.5 0] [0.5 0 0.5] v [0.66666668653 0] [0.66666668653 0 0.5] v [0.83333331347 0] [0.83333331347 0 0.5] v [1 0] [1 0 0.5] v [0 0.16666667163] [0 0.16666667163 0.5] v [0.16666667163 0.16666667163] [0.16666667163 0.16666667163 0.5] v [0.33333334327 0.16666667163] [0.33333334327 0.16666667163 0.5] v [0.5 0.16666667163] [0.5 0.16666667163 0.5] v [0.66666668653 0.16666667163] [0.66666668653 0.16666667163 0.5] v [0.83333331347 0.16666667163] [0.83333331347 0.16666667163 0.5] v [1 0.16666667163] [1 0.16666667163 0.5] v [0 0.33333334327] [0 0.33124151826 0.5] v [0.16666667163 0.33333334327] [0.16666667163 0.33124151826 0.5] v [0.33333334327 0.33333334327] [0.33333334327 0.33124151826 0.5] v [0.5 0.33333334327] [0.5 0.33124151826 0.5] v [0.66666668653 0.33333334327] [0.66666668653 0.33124151826 0.5] v [0.83333331347 0.33333334327] [0.83333331347 0.33124151826 0.5] v [1 0.33333334327] [1 0.33124151826 0.5] v [0 0.5] [-0.023169299588 0.5 0.5] v [0.16666667163 0.5] [0.16666667163 0.5 0.5] v [0.33333334327 0.5] [0.33333334327 0.5 0.5] v [0.5 0.5] [0.5 0.5 0.5] v [0.66666668653 0.5] [0.67736017704 0.5 0.5] v [0.83333331347 0.5] [0.83333331347 0.5 0.5] v [1 0.5] [1.0120185614 0.5 0.5] v [0 0.66666668653] [0 0.66882008314 0.5] v [0.16666667163 0.66666668653] [0.16666667163 0.66882008314 0.5] v [0.33333334327 0.66666668653] [0.33333334327 0.66882008314 0.5] v [0.5 0.66666668653] [0.5 0.66882008314 0.5] v [0.66666668653 0.66666668653] [0.66666668653 0.66882008314 0.5] v [0.83333331347 0.66666668653] [0.83333331347 0.66882008314 0.5] v [1 0.66666668653] [1 0.66882008314 0.5] v [0 0.83333331347] [0 0.83333331347 0.5] v [0.16666667163 0.83333331347] [0.16666667163 0.83333331347 0.5] v [0.33333334327 0.83333331347] [0.33333334327 0.83333331347 0.5] v [0.5 0.83333331347] [0.5 0.83333331347 0.5] v [0.66666668653 0.83333331347] [0.66666668653 0.83333331347 0.5] v [0.83333331347 0.83333331347] [0.83333331347 0.83333331347 0.5] v [1 0.83333331347] [1 0.83333331347 0.5] v [0 1] [0 1 0.5] v [0.16666667163 1] [0.16666667163 1 0.5] v [0.33333334327 1] [0.33333334327 1 0.5] v [0.5 1] [0.5 1 0.5] v [0.66666668653 1] [0.66666668653 1 0.5] v [0.83333331347 1] [0.83333331347 1 0.5] v [1 1] [1 1 0.5] v [0 1 8 7] [0 0 0 0] f [1 2 9 8] [0 0 0 0] f [2 3 10 9] [0 0 0 0] f [3 4 11 10] [0 0 0 0] f [4 5 12 11] [0 0 0 0] f [5 6 13 12] [0 0 0 0] f [7 8 15 14] [0 0 0 0] f [8 9 16 15] [0 0 0 0] f [9 10 17 16] [0 0 0 0] f [10 11 18 17] [0 0 0 0] f [11 12 19 18] [0 0 0 0] f [12 13 20 19] [0 0 0 0] f [14 15 22 21] [0 0 0 0] f [15 16 23 22] [0 0 0 0] f [16 17 24 23] [0 0 0 0] f [17 18 25 24] [0 0 0 0] f [18 19 26 25] [0 0 0 0] f [19 20 27 26] [0 0 0 0] f [21 22 29 28] [0 0 0 0] f [22 23 30 29] [0 0 0 0] f [23 24 31 30] [0 0 0 0] f [24 25 32 31] [0 0 0 0] f [25 26 33 32] [0 0 0 0] f [26 27 34 33] [0 0 0 0] f [28 29 36 35] [0 0 0 0] f [29 30 37 36] [0 0 0 0] f [30 31 38 37] [0 0 0 0] f [31 32 39 38] [0 0 0 0] f [32 33 40 39] [0 0 0 0] f [33 34 41 40] [0 0 0 0] f [35 36 43 42] [0 0 0 0] f [36 37 44 43] [0 0 0 0] f [37 38 45 44] [0 0 0 0] f [38 39 46 45] [0 0 0 0] f [39 40 47 46] [0 0 0 0] f [40 41 48 47] [0 0 0 0] f "/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#9" keyPath="opacity">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#10" keyPath="emitterCells.EmitterCell.emitterBehaviors.simpleAttractor.stiffness">
+	    <value type="real" value="2.5"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#9" keyPath="filters.gaussianBlur.inputRadius">
+	    <value type="real" value="0.25"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#11" keyPath="opacity">
+	    <value type="real" value="0.346357"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="position.y">
+	    <value type="real" value="2116.4"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="bounds.size.height">
+	    <value type="real" value="1352.01"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="filters.variableBlur.inputRadius">
+	    <value type="integer" value="8"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#12" keyPath="opacity">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="State 1" basedOn="hint" nextDelay="2">
+	<elements>
+	  <LKStateSetValue targetId="#13" keyPath="position.x">
+	    <value type="real" value="575.5"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#14" keyPath="opacity">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#13" keyPath="position.y">
+	    <value type="integer" value="1908"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#13" keyPath="transform.scale.xy">
+	    <value type="real" value="4.14"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#15" keyPath="transform.scale.xy">
+	    <value type="real" value="4.53"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#16" keyPath="filters.variableBlur.inputRadius">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#15" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#17" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#17" keyPath="position.y">
+	    <value type="real" value="1572.5"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#18" keyPath="meshTransform">
+	    <value type="CAMeshTransform" value="[0 0] [0 0 0.5] v [0.25 0] [0.25 0 0.5] v [0.5 0] [0.5 0 0.5] v [0.75 0] [0.75 0 0.5] v [1 0] [1 0 0.5] v [0 0.25] [0 0.25 0.5] v [0.25 0.25] [0.25 0.25 0.5] v [0.5 0.25] [0.5 0.25 0.5] v [0.75 0.25] [0.75 0.25 0.5] v [1 0.25] [1 0.25 0.5] v [0 0.5] [-0.010296337306 0.47424346209 0.5] v [0.25 0.5] [0.25 0.47424346209 0.5] v [0.5 0.5] [0.5 0.47424346209 0.5] v [0.75 0.5] [0.74242728949 0.47424346209 0.5] v [1 0.5] [1.0101965666 0.47424346209 0.5] v [0 0.75] [0 0.75 0.5] v [0.25 0.75] [0.25 0.75 0.5] v [0.5 0.75] [0.5 0.75 0.5] v [0.75 0.75] [0.75 0.75 0.5] v [1 0.75] [1 0.75 0.5] v [0 1] [0 1 0.5] v [0.25 1] [0.25 1 0.5] v [0.5 1] [0.5 1 0.5] v [0.75 1] [0.75 1 0.5] v [1 1] [1 1 0.5] v [0 1 6 5] [0 0 0 0] f [1 2 7 6] [0 0 0 0] f [2 3 8 7] [0 0 0 0] f [3 4 9 8] [0 0 0 0] f [5 6 11 10] [0 0 0 0] f [6 7 12 11] [0 0 0 0] f [7 8 13 12] [0 0 0 0] f [8 9 14 13] [0 0 0 0] f [10 11 16 15] [0 0 0 0] f [11 12 17 16] [0 0 0 0] f [12 13 18 17] [0 0 0 0] f [13 14 19 18] [0 0 0 0] f [15 16 21 20] [0 0 0 0] f [16 17 22 21] [0 0 0 0] f [17 18 23 22] [0 0 0 0] f [18 19 24 23] [0 0 0 0] f "/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#19" keyPath="position.y">
+	    <value type="integer" value="-100"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#20" keyPath="position.y">
+	    <value type="integer" value="-200"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#13" keyPath="filters.gaussianBlur.inputRadius">
+	    <value type="integer" value="5"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#16" keyPath="filters.colorSaturate.inputAmount">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#21" keyPath="transform.scale.xy">
+	    <value type="real" value="4.14"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#21" keyPath="position.y">
+	    <value type="integer" value="1635"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#22" keyPath="opacity">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#23" keyPath="position.y">
+	    <value type="integer" value="2981"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#24" keyPath="position.y">
+	    <value type="integer" value="1603"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#25" keyPath="contentsMultiplyColor">
+	    <value type="CGColor" value="0 0 0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#25" keyPath="opacity">
+	    <value type="real" value="0.5"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#25" keyPath="position.y">
+	    <value type="real" value="1243.5"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#24" keyPath="meshTransform">
+	    <value type="CAMeshTransform" value="[0 0] [0 0 0.5] v [0.16666667163 0] [0.16666667163 0 0.5] v [0.33333334327 0] [0.33333334327 0 0.5] v [0.5 0] [0.5 0 0.5] v [0.66666668653 0] [0.66666668653 0 0.5] v [0.83333331347 0] [0.83333331347 0 0.5] v [1 0] [1 0 0.5] v [0 0.16666667163] [0 0.16666667163 0.5] v [0.16666667163 0.16666667163] [0.16666667163 0.16666667163 0.5] v [0.33333334327 0.16666667163] [0.33333334327 0.16666667163 0.5] v [0.5 0.16666667163] [0.5 0.16666667163 0.5] v [0.66666668653 0.16666667163] [0.66666668653 0.16666667163 0.5] v [0.83333331347 0.16666667163] [0.83333331347 0.16666667163 0.5] v [1 0.16666667163] [1 0.16666667163 0.5] v [0 0.33333334327] [0 0.33333334327 0.5] v [0.16666667163 0.33333334327] [0.16666667163 0.33333334327 0.5] v [0.33333334327 0.33333334327] [0.33333334327 0.33333334327 0.5] v [0.5 0.33333334327] [0.5 0.33333334327 0.5] v [0.66666668653 0.33333334327] [0.66666668653 0.33333334327 0.5] v [0.83333331347 0.33333334327] [0.83333331347 0.33333334327 0.5] v [1 0.33333334327] [1 0.33333334327 0.5] v [0 0.5] [0 0.5 0.5] v [0.16666667163 0.5] [0.16666667163 0.5 0.5] v [0.33333334327 0.5] [0.33333334327 0.5 0.5] v [0.5 0.5] [0.5 0.5 0.5] v [0.66666668653 0.5] [0.66666668653 0.5 0.5] v [0.83333331347 0.5] [0.83333331347 0.5 0.5] v [1 0.5] [1 0.5 0.5] v [0 0.66666668653] [0 0.66666668653 0.5] v [0.16666667163 0.66666668653] [0.16666667163 0.66666668653 0.5] v [0.33333334327 0.66666668653] [0.33333334327 0.66666668653 0.5] v [0.5 0.66666668653] [0.5 0.66666668653 0.5] v [0.66666668653 0.66666668653] [0.66666668653 0.66666668653 0.5] v [0.83333331347 0.66666668653] [0.83333331347 0.66666668653 0.5] v [1 0.66666668653] [1 0.66666668653 0.5] v [0 0.83333331347] [0 0.83333331347 0.5] v [0.16666667163 0.83333331347] [0.16666667163 0.83333331347 0.5] v [0.33333334327 0.83333331347] [0.33333334327 0.83333331347 0.5] v [0.5 0.83333331347] [0.5 0.83333331347 0.5] v [0.66666668653 0.83333331347] [0.66666668653 0.83333331347 0.5] v [0.83333331347 0.83333331347] [0.83333331347 0.83333331347 0.5] v [1 0.83333331347] [1 0.83333331347 0.5] v [0 1] [0 1 0.5] v [0.16666667163 1] [0.16666667163 1 0.5] v [0.33333334327 1] [0.33333334327 1 0.5] v [0.5 1] [0.5 1 0.5] v [0.66666668653 1] [0.66666668653 1 0.5] v [0.83333331347 1] [0.83333331347 1 0.5] v [1 1] [1 1 0.5] v [0 1 8 7] [0 0 0 0] f [1 2 9 8] [0 0 0 0] f [2 3 10 9] [0 0 0 0] f [3 4 11 10] [0 0 0 0] f [4 5 12 11] [0 0 0 0] f [5 6 13 12] [0 0 0 0] f [7 8 15 14] [0 0 0 0] f [8 9 16 15] [0 0 0 0] f [9 10 17 16] [0 0 0 0] f [10 11 18 17] [0 0 0 0] f [11 12 19 18] [0 0 0 0] f [12 13 20 19] [0 0 0 0] f [14 15 22 21] [0 0 0 0] f [15 16 23 22] [0 0 0 0] f [16 17 24 23] [0 0 0 0] f [17 18 25 24] [0 0 0 0] f [18 19 26 25] [0 0 0 0] f [19 20 27 26] [0 0 0 0] f [21 22 29 28] [0 0 0 0] f [22 23 30 29] [0 0 0 0] f [23 24 31 30] [0 0 0 0] f [24 25 32 31] [0 0 0 0] f [25 26 33 32] [0 0 0 0] f [26 27 34 33] [0 0 0 0] f [28 29 36 35] [0 0 0 0] f [29 30 37 36] [0 0 0 0] f [30 31 38 37] [0 0 0 0] f [31 32 39 38] [0 0 0 0] f [32 33 40 39] [0 0 0 0] f [33 34 41 40] [0 0 0 0] f [35 36 43 42] [0 0 0 0] f [36 37 44 43] [0 0 0 0] f [37 38 45 44] [0 0 0 0] f [38 39 46 45] [0 0 0 0] f [39 40 47 46] [0 0 0 0] f [40 41 48 47] [0 0 0 0] f "/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#26" keyPath="opacity">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#26" keyPath="contentsMultiplyColor">
+	    <value type="CGColor" value="0 0 0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#16" keyPath="position.y">
+	    <value type="integer" value="1794"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#9" keyPath="position.y">
+	    <value type="integer" value="2110"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#9" keyPath="opacity">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#10" keyPath="emitterCells.EmitterCell.emitterBehaviors.simpleAttractor.stiffness">
+	    <value type="integer" value="-50"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#9" keyPath="filters.gaussianBlur.inputRadius">
+	    <value type="integer" value="2"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#10" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#5" keyPath="position.y">
+	    <value type="real" value="2263.81"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#7" keyPath="meshTransform">
+	    <value type="CAMeshTransform" value="[0 0] [0 0 0.5] v [0.20000000298 0] [0.20000000298 0 0.5] v [0.40000000596 0] [0.40000000596 0 0.5] v [0.60000002384 0] [0.60000002384 0 0.5] v [0.80000001192 0] [0.80000001192 0 0.5] v [1 0] [1 0 0.5] v [0 0.20000000298] [0 0.20000000298 0.5] v [0.20000000298 0.20000000298] [0.20000000298 0.20000000298 0.5] v [0.40000000596 0.20000000298] [0.40000000596 0.20000000298 0.5] v [0.60000002384 0.20000000298] [0.60000002384 0.20000000298 0.5] v [0.80000001192 0.20000000298] [0.80000001192 0.20000000298 0.5] v [1 0.20000000298] [1 0.20000000298 0.5] v [0 0.40000000596] [0 0.40000000596 0.5] v [0.20000000298 0.40000000596] [0.20000000298 0.40000000596 0.5] v [0.40000000596 0.40000000596] [0.40000000596 0.40000000596 0.5] v [0.60000002384 0.40000000596] [0.60000002384 0.40000000596 0.5] v [0.80000001192 0.40000000596] [0.80000001192 0.40000000596 0.5] v [1 0.40000000596] [1 0.40000000596 0.5] v [0 0.60000002384] [0 0.60000002384 0.5] v [0.20000000298 0.60000002384] [0.20000000298 0.60000002384 0.5] v [0.40000000596 0.60000002384] [0.40000000596 0.60000002384 0.5] v [0.60000002384 0.60000002384] [0.60000002384 0.60000002384 0.5] v [0.80000001192 0.60000002384] [0.80000001192 0.60000002384 0.5] v [1 0.60000002384] [1 0.60000002384 0.5] v [0 0.80000001192] [0 0.80000001192 0.5] v [0.20000000298 0.80000001192] [0.20000000298 0.80000001192 0.5] v [0.40000000596 0.80000001192] [0.40000000596 0.80000001192 0.5] v [0.60000002384 0.80000001192] [0.60000002384 0.80000001192 0.5] v [0.80000001192 0.80000001192] [0.80000001192 0.80000001192 0.5] v [1 0.80000001192] [1 0.80000001192 0.5] v [0 1] [0 1 0.5] v [0.20000000298 1] [0.20000000298 1 0.5] v [0.40000000596 1] [0.40000000596 1 0.5] v [0.60000002384 1] [0.60000002384 1 0.5] v [0.80000001192 1] [0.80000001192 1 0.5] v [1 1] [1 1 0.5] v [0 1 7 6] [0 0 0 0] f [1 2 8 7] [0 0 0 0] f [2 3 9 8] [0 0 0 0] f [3 4 10 9] [0 0 0 0] f [4 5 11 10] [0 0 0 0] f [6 7 13 12] [0 0 0 0] f [7 8 14 13] [0 0 0 0] f [8 9 15 14] [0 0 0 0] f [9 10 16 15] [0 0 0 0] f [10 11 17 16] [0 0 0 0] f [12 13 19 18] [0 0 0 0] f [13 14 20 19] [0 0 0 0] f [14 15 21 20] [0 0 0 0] f [15 16 22 21] [0 0 0 0] f [16 17 23 22] [0 0 0 0] f [18 19 25 24] [0 0 0 0] f [19 20 26 25] [0 0 0 0] f [20 21 27 26] [0 0 0 0] f [21 22 28 27] [0 0 0 0] f [22 23 29 28] [0 0 0 0] f [24 25 31 30] [0 0 0 0] f [25 26 32 31] [0 0 0 0] f [26 27 33 32] [0 0 0 0] f [27 28 34 33] [0 0 0 0] f [28 29 35 34] [0 0 0 0] f "/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#12" keyPath="backgroundColor">
+	    <value type="CGColor" opacity="0.123" value="0 0 0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#12" keyPath="opacity">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="State 2" basedOn="State 1">
+	<elements>
+	  <LKStateSetValue targetId="#16" keyPath="scale">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#20" keyPath="position.y">
+	    <value type="integer" value="-250"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#12" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#18" keyPath="meshTransform">
+	    <value type="CAMeshTransform" value="[0 0] [0 0 0.5] v [0.25 0] [0.25 0 0.5] v [0.5 0] [0.5 0 0.5] v [0.75 0] [0.75 0 0.5] v [1 0] [1 0 0.5] v [0 0.25] [0 0.25 0.5] v [0.25 0.25] [0.25 0.25 0.5] v [0.5 0.25] [0.5 0.25 0.5] v [0.75 0.25] [0.75 0.25 0.5] v [1 0.25] [1 0.25 0.5] v [0 0.5] [0 0.5 0.5] v [0.25 0.5] [0.25 0.5 0.5] v [0.5 0.5] [0.5 0.5 0.5] v [0.75 0.5] [0.75 0.5 0.5] v [1 0.5] [1 0.5 0.5] v [0 0.75] [0 0.75 0.5] v [0.25 0.75] [0.25 0.75 0.5] v [0.5 0.75] [0.5 0.75 0.5] v [0.75 0.75] [0.75 0.75 0.5] v [1 0.75] [1 0.75 0.5] v [0 1] [0 1 0.5] v [0.25 1] [0.25 1 0.5] v [0.5 1] [0.5 1 0.5] v [0.75 1] [0.75 1 0.5] v [1 1] [1 1 0.5] v [0 1 6 5] [0 0 0 0] f [1 2 7 6] [0 0 0 0] f [2 3 8 7] [0 0 0 0] f [3 4 9 8] [0 0 0 0] f [5 6 11 10] [0 0 0 0] f [6 7 12 11] [0 0 0 0] f [7 8 13 12] [0 0 0 0] f [8 9 14 13] [0 0 0 0] f [10 11 16 15] [0 0 0 0] f [11 12 17 16] [0 0 0 0] f [12 13 18 17] [0 0 0 0] f [13 14 19 18] [0 0 0 0] f [15 16 21 20] [0 0 0 0] f [16 17 22 21] [0 0 0 0] f [17 18 23 22] [0 0 0 0] f [18 19 24 23] [0 0 0 0] f "/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+    </states>
+    <stateTransitions>
+      <LKStateTransition fromState="*" toState="State 1">
+	<elements>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#15">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="transform.scale.xy" beginTime="0.105" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#15">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" beginTime="0.105" duration="1.22699" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.652"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#24">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" beginTime="0.105" duration="0.749064" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="1.068"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#14">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" beginTime="0.15" duration="1.22699" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.652"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="meshTransform" targetId="#24">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="meshTransform" beginTime="0.105" duration="1.73913" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.46"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#13">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="transform.scale.xy" beginTime="0.105" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.x" targetId="#13">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.x" beginTime="0.105" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#13">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" beginTime="0.105" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#16">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" beginTime="0.105" duration="0.611621" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="1.308"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.variableBlur.inputRadius" targetId="#16">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="filters.variableBlur.inputRadius" beginTime="0.13" duration="1.73913" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.46"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#17">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" beginTime="0.105" duration="0.966184" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.828"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#17">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" beginTime="0.105" duration="0.990099" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.808"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="meshTransform" targetId="#18">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="meshTransform" beginTime="0.105" duration="0.266667" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="3"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#19">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" keyPath="position.y" beginTime="0.105" duration="4" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.3"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#20">
+	    <animation type="CASpringAnimation" damping="12" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" mica_preservesVelocity="1" additive="1" keyPath="position.y" beginTime="0.105" duration="3.39667" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.7"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.gaussianBlur.inputRadius" targetId="#13">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="filters.gaussianBlur.inputRadius" beginTime="0.25" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="1"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.colorSaturate.inputAmount" targetId="#16">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="filters.colorSaturate.inputAmount" beginTime="0.13" duration="1.33333" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.6"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#21">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="transform.scale.xy" beginTime="0.105" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#21">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" beginTime="0.105" duration="0.766284" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="1.044"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#22">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" beginTime="0.15" duration="1.22699" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.652"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#23">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" beginTime="0" duration="2.66667" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.3"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#25">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" beginTime="0.26" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="contentsMultiplyColor" targetId="#25">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="contentsMultiplyColor" beginTime="0.315" duration="1.6" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.5"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#25">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" beginTime="0.105" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="1"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#26">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" beginTime="0.105" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="1"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="contentsMultiplyColor" targetId="#26">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="contentsMultiplyColor" beginTime="0.315" duration="1.6" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.5"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#9">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#9">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.gaussianBlur.inputRadius" targetId="#9">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="filters.gaussianBlur.inputRadius" beginTime="0.11" duration="1.2987" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.616"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="emitterCells.EmitterCell.emitterBehaviors.simpleAttractor.stiffness" targetId="#10">
+	    <animation type="CABasicAnimation" keyPath="emitterCells.EmitterCell.emitterBehaviors.simpleAttractor.stiffness" duration="0.01" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="5">
+	      <animationType/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#10">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" beginTime="1.595" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="meshTransform" targetId="#7">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="meshTransform" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="backgroundColor" targetId="#12">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="backgroundColor" beginTime="0.36" duration="1.6" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.5"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#12">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="0.727273" fillMode="backwards" speed="1.1"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="State 1" toState="*">
+	<elements>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#15">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="transform.scale.xy" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#15">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#24">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="meshTransform" targetId="#24">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="meshTransform" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#13">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="transform.scale.xy" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.x" targetId="#13">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.x" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#13">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#14">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#16">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.variableBlur.inputRadius" targetId="#16">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="filters.variableBlur.inputRadius" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#17">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#17">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="meshTransform" targetId="#18">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="meshTransform" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#19">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#20">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.gaussianBlur.inputRadius" targetId="#13">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="filters.gaussianBlur.inputRadius" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.colorSaturate.inputAmount" targetId="#16">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="filters.colorSaturate.inputAmount" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#21">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="transform.scale.xy" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#21">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#22">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#23">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#25">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="contentsMultiplyColor" targetId="#25">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="contentsMultiplyColor" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#25">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#26">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="contentsMultiplyColor" targetId="#26">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="contentsMultiplyColor" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#9">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#9">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.gaussianBlur.inputRadius" targetId="#9">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="filters.gaussianBlur.inputRadius" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="emitterCells.EmitterCell.emitterBehaviors.simpleAttractor.stiffness" targetId="#10">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="emitterCells.EmitterCell.emitterBehaviors.simpleAttractor.stiffness" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#10">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="meshTransform" targetId="#7">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="meshTransform" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="backgroundColor" targetId="#12">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="backgroundColor" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#12">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="0.8" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="State 2">
+	<elements>
+	  <LKStateTransitionElement key="meshTransform" targetId="#18">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="meshTransform" beginTime="0" duration="2.33918" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.342"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#12">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" beginTime="0" duration="2.33918" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.342"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="scale" targetId="#16">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="scale" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#20">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="State 2" toState="*">
+	<elements>
+	  <LKStateTransitionElement key="meshTransform" targetId="#18">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="meshTransform" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="scale" targetId="#16">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="scale" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#20">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#12">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="0.8" fillMode="backwards" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="hint">
+	<elements>
+	  <LKStateTransitionElement key="meshTransform" targetId="#7">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="meshTransform" duration="8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.1" timingFunction="0.028329 0.0014778 0.7303 0.69704"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#11">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="1.05263" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.76" timingFunction="0.28695 0.0014778 0.7303 0.69704"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#2">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" duration="0.854701" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.936" timingFunction="0.28695 0.0014778 0.7303 0.69704"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.variableBlur.inputRadius" targetId="#2">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="filters.variableBlur.inputRadius" duration="1.25" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.64" timingFunction="0.28695 0.0014778 0.7303 0.69704"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.colorSaturate.inputAmount" targetId="#2">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="filters.colorSaturate.inputAmount" duration="1.35135" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.592"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#6">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="1.35135" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.592"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#3">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="1.35135" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.592"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#12">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="2" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.4"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#4">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="1.34228" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.596"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" duration="1.3289" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.602" timingFunction="0.28695 0.0014778 0.7303 0.69704"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="bounds.size.height" targetId="#2">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="bounds.size.height" duration="0.840336" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.952" timingFunction="0.28695 0.0014778 0.7303 0.69704"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="meshTransform" targetId="#8">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="meshTransform" duration="0.78125" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="1.024"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#8">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" duration="1.3289" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.602" timingFunction="0.28695 0.0014778 0.7303 0.69704"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#9">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" beginTime="0.3" duration="0.666667" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="1.2"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="emitterCells.EmitterCell.emitterBehaviors.simpleAttractor.stiffness" targetId="#10">
+	    <animation type="CABasicAnimation" keyPath="emitterCells.EmitterCell.emitterBehaviors.simpleAttractor.stiffness" duration="0.01" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="5">
+	      <animationType/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.gaussianBlur.inputRadius" targetId="#9">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="filters.gaussianBlur.inputRadius" duration="1.27796" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.626" timingFunction="0.28695 0.0014778 0.7303 0.69704"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="hint" toState="*">
+	<elements>
+	  <LKStateTransitionElement key="meshTransform" targetId="#7">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="meshTransform" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="1"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#11">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="1.38889" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.576"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#2">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="1"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.variableBlur.inputRadius" targetId="#2">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="filters.variableBlur.inputRadius" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="1"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.colorSaturate.inputAmount" targetId="#2">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="filters.colorSaturate.inputAmount" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="1"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#6">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="1.38889" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.576"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#3">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="1.38889" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.576"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#12">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="1"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#4">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="1"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" beginTime="0" duration="1.6" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.5"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#5">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" beginTime="0" duration="2" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.4"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="bounds.size.height" targetId="#2">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="bounds.size.height" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="meshTransform" targetId="#8">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="meshTransform" duration="0.8" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="position.y" targetId="#8">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="position.y" duration="2" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.4"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="opacity" targetId="#9">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="opacity" beginTime="0.085" duration="1.6" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.5"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="emitterCells.EmitterCell.emitterBehaviors.simpleAttractor.stiffness" targetId="#10">
+	    <animation type="CABasicAnimation" keyPath="emitterCells.EmitterCell.emitterBehaviors.simpleAttractor.stiffness" duration="0.01" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="5">
+	      <animationType/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.gaussianBlur.inputRadius" targetId="#9">
+	    <animation type="CASpringAnimation" damping="50" mass="2" stiffness="300" velocity="0" mica_autorecalculatesDuration="1" keyPath="filters.gaussianBlur.inputRadius" beginTime="0.055" duration="1.6" fillMode="backwards" highFrameRateReason="1" preferredFrameRateRangeMaximum="120" preferredFrameRateRangeMinimum="120" preferredFrameRateRangePreferred="120" speed="0.5"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+    </stateTransitions>
+  </CALayer>
+</caml>
