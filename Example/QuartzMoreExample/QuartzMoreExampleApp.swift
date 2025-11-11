@@ -12,7 +12,7 @@ import SwiftUI
 struct QuartzMoreExampleApp: App {
 #if DEBUG
     init() {
-//        Dynamic.loggingEnabled = true
+        Dynamic.loggingEnabled = true
     }
 #endif
 
