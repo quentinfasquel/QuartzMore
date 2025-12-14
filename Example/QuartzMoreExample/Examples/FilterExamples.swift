@@ -15,7 +15,7 @@ struct AlphaThresholdExample: View {
     var body: some View {
         CommonBody(filter: _CAFilter.alphaThreshold()) { filter in
             filter.inputAmount = 0.5
-            filter.inputColor = UIColor.red.cgColor
+            filter.inputColor = PlatformColor.red.cgColor
         } controls: { layer, filter in
             Slider(value: layer.binding(filter, keyPath: \.inputAmount, default: 0), in: 0...1) { Text("Amount") }
         }
@@ -25,7 +25,7 @@ struct AlphaThresholdExample: View {
 struct AlphaSmoothThresholdExample: View {
     var body: some View {
         CommonBody(filter: _CAFilter.alphaSmoothThreshold()) { filter in
-            filter.inputColor = UIColor.red.cgColor
+            filter.inputColor = PlatformColor.red.cgColor
         }
     }
 }
@@ -33,7 +33,7 @@ struct AlphaSmoothThresholdExample: View {
 struct MultiplyColorExample: View {
     var body: some View {
         CommonBody(filter: _CAFilter.multiplyColor()) { filter in
-            filter.inputColor = UIColor.red.cgColor
+            filter.inputColor = PlatformColor.red.cgColor
         }
     }
 }
@@ -41,7 +41,7 @@ struct MultiplyColorExample: View {
 struct ColorAddExample: View {
     var body: some View {
         CommonBody(filter: _CAFilter.colorAdd()) { filter in
-            filter.inputColor = UIColor.red.cgColor
+            filter.inputColor = PlatformColor.red.cgColor
         }
     }
 }
@@ -49,7 +49,7 @@ struct ColorAddExample: View {
 struct ColorSubtractExample: View {
     var body: some View {
         CommonBody(filter: _CAFilter.colorSubtract()) { filter in
-            filter.inputColor = UIColor.blue.cgColor
+            filter.inputColor = PlatformColor.blue.cgColor
         }
     }
 }
@@ -59,7 +59,7 @@ struct ColorMonochromeExample: View {
         CommonBody(filter: _CAFilter.colorMonochrome()) { filter in
             filter.inputAmount = 0.5
             filter.inputBias = 0.5
-            filter.inputColor = UIColor.gray.cgColor
+            filter.inputColor = PlatformColor.gray.cgColor
         }
     }
 }
@@ -360,10 +360,13 @@ struct FilterExamplePicker: View {
                     .tag(filterType)
             }
         }
+#if os(iOS)
         .tabViewStyle(.page)
+#endif
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.background)
         .colorScheme(.dark)
+#if os(iOS)
         .toolbar {
             ToolbarItem(placement: .title) {
                 Picker("", selection: $filterType) {
@@ -376,6 +379,7 @@ struct FilterExamplePicker: View {
                 .tint(.white)
             }
         }
+#endif
     }
 }
 
@@ -510,9 +514,16 @@ struct CommonBody<T, Content: View, Controls: View>: View {
     }
 }
 
-struct CALayerHosting<Content: View>: UIViewControllerRepresentable {
+struct CALayerHosting<Content: View> {
     @ViewBuilder var content: Content
     var onLayer: (CALayer) -> Void
+    
+}
+
+#if canImport(UIKit)
+import UIKit
+
+extension CALayerHosting: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIHostingController<Content> {
         let hosting = UIHostingController(rootView: content)
         print("init", hosting.view.layer)
@@ -523,8 +534,23 @@ struct CALayerHosting<Content: View>: UIViewControllerRepresentable {
         hosting.rootView = content
     }
 }
+#elseif canImport(AppKit)
+import AppKit
 
-
+extension CALayerHosting: NSViewControllerRepresentable {
+    func makeNSViewController(context: Context) -> NSHostingController<Content> {
+        let hosting = NSHostingController(rootView: content)
+        hosting.view.wantsLayer = true
+        if let layer = hosting.view.layer {
+            onLayer(layer)
+        }
+        return hosting
+    }
+    func updateNSViewController(_ hosting: NSHostingController<Content>, context: Context) {
+        hosting.rootView = content
+    }
+}
+#endif
 
 extension CALayer {
     func binding<T, V>(
