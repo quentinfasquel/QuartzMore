@@ -18,6 +18,11 @@ struct ContentView: View {
                     NavigationLink("Package view (CAPackage)") {
                         ShockwaveEffectExample()
                     }
+                    
+                    // Mesh Interpolator / Mutable Mesh
+                    NavigationLink("Mesh transform") {
+                        MeshTransformExample()
+                    }
 
                     DisclosureGroup("CALayer Views") {
 
