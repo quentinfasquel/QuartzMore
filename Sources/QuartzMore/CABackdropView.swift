@@ -14,7 +14,6 @@ import SwiftUI
 final class _CABackdropLayerView: UIView {
     override class var layerClass: AnyClass {
         NSClassFromString("CABackdropLayer") ?? CALayer.self
-//        Dynamic.CABackdropLayer.asInferred() ?? CALayer.self
     }
 }
 
@@ -56,16 +55,12 @@ public struct CABackdropView: UIViewRepresentable {
         gaussian.inputRadius = 20
         return gaussian
     }
+
     ZStack {
         Circle()
             .fill(.red)
-//            .frame(width: 300)
             .overlay(
-                CABackdropView(filters: [
-                    filter,
-                    //            .colorSaturate()
-                ])
-//                .frame(height: 100)
+                CABackdropView(filters: [filter])
                 .saturation(0.2)
             )
     }

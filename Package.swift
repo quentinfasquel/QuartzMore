@@ -12,10 +12,6 @@ let package = Package(
             name: "QuartzMore",
             targets: ["QuartzMore"]
         ),
-        .library(
-            name: "QuartzMoreResources",
-            targets: ["QuartzMoreResources"]
-        ),
     ],
     dependencies: [
         .package(url: "https://github.com/mhdhejazi/Dynamic", from: "1.2.0"),
@@ -26,30 +22,26 @@ let package = Package(
         .target(
             name: "QuartzMore",
             dependencies: [
-                "CAFilterBuiltins",
                 "QuartzMoreCore",
-                "Turbocharger"
+                .product(name: "CAFilterBuiltins", package: "CAFilterBuiltins"),
+                .product(name: "Turbocharger", package: "Turbocharger"),
             ],
         ),
         .target(
             name: "QuartzMoreCore",
-            dependencies: ["Dynamic", "QuartzMoreProxy"],
+            dependencies: [
+                "QuartzMoreProxy",
+                .product(name: "Dynamic", package: "Dynamic"),
+            ],
         ),
         .target(
             name: "QuartzMoreProxy",
             publicHeadersPath: "."
         ),
-        .target(
-            name: "QuartzMoreResources",
-            resources: [
-                .copy("shockwave-bottomup-v14.ca")
-            ]
-        ),
         .testTarget(
             name: "QuartzMoreTests",
             dependencies: [
-                "QuartzMore",
-                "QuartzMoreResources",
+                "QuartzMore"
             ]
         ),
     ]
