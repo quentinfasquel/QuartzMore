@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		669F37122E59296E004BCE15 /* Turbocharger in Frameworks */ = {isa = PBXBuildFile; productRef = 669F37112E59296E004BCE15 /* Turbocharger */; };
 		66ED589F2E69C52A008FC4F8 /* QuartzMore in Frameworks */ = {isa = PBXBuildFile; productRef = 66ED589E2E69C52A008FC4F8 /* QuartzMore */; };
-		66ED58A12E69C52A008FC4F8 /* QuartzMoreResources in Frameworks */ = {isa = PBXBuildFile; productRef = 66ED58A02E69C52A008FC4F8 /* QuartzMoreResources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 			files = (
 				66ED589F2E69C52A008FC4F8 /* QuartzMore in Frameworks */,
 				669F37122E59296E004BCE15 /* Turbocharger in Frameworks */,
-				66ED58A12E69C52A008FC4F8 /* QuartzMoreResources in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +66,6 @@
 			packageProductDependencies = (
 				669F37112E59296E004BCE15 /* Turbocharger */,
 				66ED589E2E69C52A008FC4F8 /* QuartzMore */,
-				66ED58A02E69C52A008FC4F8 /* QuartzMoreResources */,
 			);
 			productName = ExampleOpenUI;
 			productReference = 66ED589B2E69C4DA008FC4F8 /* QuartzMoreExample.app */;
@@ -399,11 +396,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 66ED589C2E69C4EF008FC4F8 /* XCLocalSwiftPackageReference "../../QuartzMore" */;
 			productName = QuartzMore;
-		};
-		66ED58A02E69C52A008FC4F8 /* QuartzMoreResources */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 66ED589C2E69C4EF008FC4F8 /* XCLocalSwiftPackageReference "../../QuartzMore" */;
-			productName = QuartzMoreResources;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
