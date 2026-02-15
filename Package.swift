@@ -17,6 +17,7 @@ let package = Package(
         .package(url: "https://github.com/mhdhejazi/Dynamic", from: "1.2.0"),
         .package(url: "https://github.com/nathantannar4/Turbocharger.git", from: "2.2.1"),
         .package(url: "https://github.com/quentinfasquel/CAFilterBuiltins.git", from: "0.1.0"),
+        .package(url: "https://github.com/swiftlang/swift-syntax.git", from: "601.0.0-latest"),
     ],
     targets: [
         .target(
@@ -30,6 +31,7 @@ let package = Package(
         .target(
             name: "QuartzMoreCore",
             dependencies: [
+                "QuartzMoreMacros",
                 "QuartzMoreProxy",
                 .product(name: "Dynamic", package: "Dynamic"),
             ],
@@ -37,6 +39,19 @@ let package = Package(
         .target(
             name: "QuartzMoreProxy",
             publicHeadersPath: "."
+        ),
+        .target(
+            name: "QuartzMoreMacros",
+            dependencies: [
+                "QuartzMoreMacrosImplementation"
+            ]
+        ),
+        .macro(
+            name: "QuartzMoreMacrosImplementation",
+            dependencies: [
+                .product(name: "SwiftCompilerPlugin", package: "swift-syntax"),
+                .product(name: "SwiftSyntaxMacros", package: "swift-syntax"),
+            ]
         ),
         .testTarget(
             name: "QuartzMoreTests",
