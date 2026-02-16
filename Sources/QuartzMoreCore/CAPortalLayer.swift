@@ -5,16 +5,18 @@
 //  Created by Quentin Fasquel on 15/02/2026.
 //
 
-import Dynamic
 import QuartzCore
 import QuartzMoreMacros
 import QuartzMoreProxy
 
 public final class _CAPortalLayer: Proxy {
 
+    public class var layerClass: CALayer.Type? {
+        NSClassFromString("CAPortalLayer") as? CALayer.Type
+    }
+
     public convenience init?() {
-        let layerClass = NSClassFromString("CAPortalLayer") as? NSObject.Type
-        guard let instance = layerClass?.init() as? NSObject else { return nil }
+        guard let instance = Self.layerClass?.init() as? CALayer else { return nil }
         self.init(target: instance)
     }
     

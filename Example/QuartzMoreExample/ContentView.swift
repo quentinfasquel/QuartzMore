@@ -15,6 +15,10 @@ struct ContentView: View {
                 Section("Quartz More") {
                     // TODO: BackdropView example
 
+                    NavigationLink("Portal view") {
+                        PortalViewExample()
+                    }
+
                     NavigationLink("Package view (CAPackage)") {
                         ShockwaveEffectExample()
                     }
