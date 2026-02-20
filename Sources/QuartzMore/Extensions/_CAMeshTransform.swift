@@ -53,3 +53,18 @@ extension _CAMeshTransform {
         )
     }
 }
+
+// MARK: - Equatable
+
+extension _CAMeshTransform: Equatable {
+    public static func == (lhs: _CAMeshTransform, rhs: _CAMeshTransform) -> Bool {
+        lhs === rhs
+    }
+}
+
+//extension _CAMutableMeshTransform: Equatable {
+//    public static func == (lhs: _CAMutableMeshTransform, rhs: _CAMutableMeshTransform) -> Bool {
+//        lhs === rhs
+//    }
+//}
+
