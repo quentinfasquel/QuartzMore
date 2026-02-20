@@ -96,6 +96,8 @@ public struct PortalView: NSViewRepresentable {
 }
 #endif
 
+// MARK: - Preview
+
 #Preview {
     @Previewable @Namespace var namespace
 
@@ -121,11 +123,9 @@ public struct PortalView: NSViewRepresentable {
             sourceID: "source",
             namespace: namespace,
             configuration: .init(
-                hidesSourceLayer: true,
-                hidesSourceLayerInOtherPortals: true,
+                hidesSourceLayer: false,
                 matchesOpacity: false,
                 matchesPosition: false,
-//                matchesSize: false,
                 matchesTransform: false,
                 sourceLayerOpacityScale: 1
             )
@@ -137,19 +137,6 @@ public struct PortalView: NSViewRepresentable {
                 Text("Portal View")
                     .padding(.top, 8)
             }
-        PortalView(
-            sourceID: "source",
-            namespace: namespace,
-            configuration: .init(
-//                hidesSourceLayer: false,
-//                hidesSourceLayerInOtherPortals: true,
-                matchesOpacity: false,
-                matchesPosition: false,
-//                matchesSize: false,
-                matchesTransform: false,
-                sourceLayerOpacityScale: 1
-            )
-        )
 
     }
     .frame(maxWidth: .infinity, maxHeight: .infinity)
