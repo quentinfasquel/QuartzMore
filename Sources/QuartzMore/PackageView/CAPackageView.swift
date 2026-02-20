@@ -6,14 +6,10 @@
 //
 
 import Foundation
-@_exported import QuartzMoreCore
 import QuartzCore
+import QuartzMoreCore
 import SwiftUI
 import Turbocharger
-
-public typealias _CAPackageType = QuartzMoreCore._CAPackageType
-public typealias _CAState = QuartzMoreCore._CAState
-public typealias _CAStateController = QuartzMoreCore._CAStateController
 
 public struct CAPackageView: CALayerRepresentable {
     let contentsURL: URL
