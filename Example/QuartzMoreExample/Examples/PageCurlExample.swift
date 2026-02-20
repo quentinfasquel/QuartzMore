@@ -35,9 +35,11 @@ struct PageCurlExample: View {
                     .fill(.red.gradient)
                 
                 TimelineView(.animation(paused: dragStartPoint == nil)) { timeline in
-                    CABackdropView(filters: [model.pageCurl]) { layer in
-                        model.layer = layer
-                    }
+                    BackdropView()
+                        .filters([model.pageCurl])
+//                    CABackdropView(filters: [model.pageCurl]) { layer in
+//                        model.layer = layer
+//                    }
                     .id(timeline.date)
                     .scaleEffect(x: -1, y: -1)
                 }
