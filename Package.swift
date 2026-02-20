@@ -33,6 +33,7 @@ let package = Package(
             dependencies: [
                 "QuartzMoreMacros",
                 "QuartzMoreProxy",
+                .product(name: "CAFilterBuiltins", package: "CAFilterBuiltins"),
                 .product(name: "Dynamic", package: "Dynamic"),
             ],
         ),
