@@ -6,35 +6,54 @@
 //
 
 import SwiftUI
-@_exported import QuartzMoreCore
+public import QuartzMoreCore
 
-fileprivate struct CAMeshTransformViewModifier: ViewModifier {
+fileprivate struct MeshTransformViewModifier: ViewModifier {
     var width: Int
     var height: Int
     var depthNormalization: CADepthNormalization = .none
     var onUpdate: (CALayer, _CAMutableMeshTransform) -> Void
     func body(content: Content) -> some View {
-        content.overlay(CABackdropView { layer in
-            let meshTransform = _CAMutableMeshTransform(
-                width: width,
-                height: height,
-                depthNormalization: depthNormalization
-            )
-            layer._meshTransform = meshTransform
-            onUpdate(layer, meshTransform)
-        })
+        content.overlay(
+            BackdropView()
+                .mutableMeshTransform(
+                    width: width,
+                    height: height,
+                    depthNormalization: depthNormalization,
+                    onUpdate: onUpdate
+                )
+        )
+    }
+}
+
+fileprivate struct MutableMeshTransformViewModifier: ViewModifier {
+    var width: Int
+    var height: Int
+    var depthNormalization: CADepthNormalization = .none
+    var onUpdate: (CALayer, _CAMutableMeshTransform) -> Void
+    func body(content: Content) -> some View {
+        content.overlay(
+            BackdropView()
+                .mutableMeshTransform(
+                    width: width,
+                    height: height,
+                    depthNormalization: depthNormalization,
+                    onUpdate: onUpdate
+                )
+        )
     }
 }
 
 public extension View {
+
     func meshTransform(
         width: Int,
         height: Int,
         depthNormalization: CADepthNormalization = .none,
-        onUpdate: @escaping (CALayer, _CAMutableMeshTransform) -> Void
+        onUpdate: @escaping (CALayer, _CAMeshTransform) -> Void
     ) -> some View {
         modifier(
-            CAMeshTransformViewModifier(
+            MeshTransformViewModifier(
                 width: width,
                 height: height,
                 depthNormalization: depthNormalization,
@@ -42,4 +61,21 @@ public extension View {
             )
         )
     }
+    
+    func mutableMeshTransform(
+        width: Int,
+        height: Int,
+        depthNormalization: CADepthNormalization = .none,
+        onUpdate: @escaping (CALayer, _CAMutableMeshTransform) -> Void
+    ) -> some View {
+        modifier(
+            MutableMeshTransformViewModifier(
+                width: width,
+                height: height,
+                depthNormalization: depthNormalization,
+                onUpdate: onUpdate
+            )
+        )
+    }
+
 }

@@ -1,97 +1,16 @@
 //
-//  MeshTransformExample.swift
+//  WaterMeshTransformAnimator.swift
 //  QuartzMoreExample
 //
-//  Created by Quentin Fasquel on 18/10/2025.
+//  Created by Quentin Fasquel on 20/02/2026.
 //
 
+import Observation
+import QuartzCore
 import QuartzMore
-import SwiftUI
-
-import Dynamic
-import Combine
-
-class MeshTransformAnimator: ObservableObject {
-    private var displayLink: CADisplayLink?
-    private var meshTransform: _CAMutableMeshTransform?
-    private var layer: CALayer?
-    private var startTime: CFTimeInterval = 0
-    
-    func startAnimation(with meshTransform: _CAMutableMeshTransform, layer: CALayer) {
-        self.meshTransform = meshTransform
-        self.layer = layer
-        self.startTime = CACurrentMediaTime()
-        
-#if os(iOS)
-        displayLink = CADisplayLink(target: self, selector: #selector(updateAnimation))
-        displayLink?.add(to: .main, forMode: .common)
-#endif
-    }
-    
-    func stopAnimation() {
-        displayLink?.invalidate()
-        displayLink = nil
-    }
-    
-    @objc private func updateAnimation() {
-        guard let meshTransform = meshTransform,
-              let layer = layer else { return }
-        
-        let currentTime = CACurrentMediaTime()
-        let elapsed = currentTime - startTime
-        
-        // Animate in a circle - we'll move vertex at position (1,1)
-        let radius: Double = 0.4 // Adjust radius as needed
-        let speed: Double = 0.1 // Revolutions per second
-        let angle = elapsed * speed * 2.0 * Double.pi
-        
-        let offsetX = Double(cos(angle)) * radius
-        let offsetY = Double(sin(angle)) * radius
-        
-        // Update the vertex at grid position (1,1) to move in a circle
-        let vertexIndex = 1 * 4 + 1 // width=4, so index = y*width + x
-        var v = meshTransform.vertex(at: vertexIndex)
-        v.position.x = 0.33 + offsetX
-        v.position.y = 0.33 + offsetY
-
-//        v.point3D.x = 0.25 + offsetX
-//        v.point3D.y = 0.25 + offsetY
-        meshTransform.replaceVertex(at: vertexIndex, with: v)
-        
-        // Trigger layer update
-//        layer.setNeedsDisplay()
-        layer._meshTransform = meshTransform
-    }
-    
-    deinit {
-        stopAnimation()
-    }
-}
-
-
-struct MeshTransformExample: View {
-    @State private var animator = WaterMeshTransformAnimator()
-    
-    var body: some View {
-        GeometryReader { geometry in
-            DefaultContent()
-                .meshTransform(width: 4, height: 4) { layer, meshTransform in
-                    animator.startAnimation(on: layer, with: meshTransform)
-                }
-        }
-        .ignoresSafeArea()
-        .onDisappear {
-            animator.stopAnimation()
-        }
-    }
-}
-
-#Preview {
-    MeshTransformExample()
-}
 
 @Observable
-public final class WaterMeshTransformAnimator {
+final class WaterMeshTransformAnimator {
     private var displayLink: CADisplayLink?
     private var meshTransform: _CAMutableMeshTransform?
     private var layer: CALayer?
@@ -106,9 +25,9 @@ public final class WaterMeshTransformAnimator {
     var enableRipples: Bool = false
     var enableZMovement: Bool = false
     
-    public init() {}
+    init() {}
     
-    public func startAnimation(on layer: CALayer, with meshTransform: _CAMutableMeshTransform) {
+    func startAnimation(on layer: CALayer, with meshTransform: _CAMutableMeshTransform) {
         self.meshTransform = meshTransform
         self.layer = layer
         self.startTime = CACurrentMediaTime()
